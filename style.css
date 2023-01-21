@@ -1,87 +1,165 @@
 
 *{box-sizing: border-box;
-    margin: 0;
+margin: 0;
 padding: 0;
 }
 :root{
-    --background1: #10152B;
+    --background1: #080b17;
     --background2: #2A3052;
     --verdeclaro: #20D4B4;
-    --azultenue: #5E9BAE;
+    --azultenue: #5e9bae33;
     --white:#fff;
 }
 
 html{
-    font-family: 'Fira Code', monospace;
+font-family: 'Fira Code', monospace;
     
 }
-body{
-    background-color:var(--background1);
+/*pagina de presentacion*/
+.index-body{
+    height: 900px;
+    width: 1900px;
+    background-color:var(--background1) ;
+  
+   
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
+       
 }
 .presentacionMainContainer{  
-    margin-top: 22px;
-    width: 1380px;
-    height: 939px;
-       
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 660px;
+    height: 520px;
 
-background: linear-gradient(241.6deg, #182839 5.55%, rgba(96, 123, 150, 0) 89.84%);
-border-radius: 77px;
 }
+
 .nombre{
-    position: relative;
+position: relative;
 width: 420px;
 height: 192px;
-left: 221px;
-top: 300px;
-
 font-family: 'Fira Code';
-font-style: bold;
+font-style: normal;
 color: #fff;
 font-weight: 400;
 font-size: 64px;
 line-height: 100%;
 }
+
 .saludo{
-    color: #fff;
-    position: relative;
+color: #fff;
+margin-right: 80px;
 width: 368px;
 height: 42px;
-left: 171px;
-top: 245px;
-
 font-family: 'Fira Code';
 font-style: normal;
 font-weight: 400;
 font-size: 30px;
 line-height: 42px;
-/* identical to box height */
 letter-spacing: 0.08em;
-
 }
+
 .webDeveloperContainer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-position: relative;
-width: 743px;
-height: 126px;
-left: 608px;
-top: 150px;
-
-background: rgba(217, 217, 217, 0.1);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ display: flex;
+ align-items: center;
+ justify-content: center;   
+ position: relative;
+ width: 743px;
+ height: 112px;
+ background: rgba(217, 217, 217, 0.1);
+ backdrop-filter: blur(15px);
+ border: solid 1px rgba(255,255,255, 0.3);
+ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ 
+ 
 }
-
 .webDeveloperContainer p{
-    color:var(--verdeclaro);
-    font-family: 'Fira Code';
+color:var(--verdeclaro);
+font-family: 'Fira Code';
 font-style: normal;
 font-weight: 450;
 font-size: 48px;
 line-height: 63px;
+}
 
+
+
+
+
+
+
+
+
+
+
+
+
+/*web-dev-page*/
+
+.body-web-dev{
+    background-color:var(--background1);
+    width: 100%;
+    height: 6111px;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+ 
+    border-bottom:1.5px solid var(--verdeclaro);
+    height: 60px;
+    width: 100%;
+}
+nav ul{
+    font-size: 20px;
+    align-self: center;
+    color: #20D4B4;
+    margin-right: 80px;
+    margin-right: 80px;
+}
+.presentacion-container{
+   position: relative;
+   display: flex;
+   
+justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: 2000px;
+    top: 0.5rem;
+}
+.img-container{
+
+    background-image: url(./midjourneyspacepromgramer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 60%;
+    border-radius: 20px;
+    height: 800px;
+    width: 1000px;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.nombre-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   justify-content: center;
+   text-align: center;
+   color: #fff;
+    margin-left: 180px;
+    margin-top: 110px;
+    width: 500px;
+    height: 600px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    border-radius: 30px;
+    border: solid 1px rgba(255,255,255, 0.3);
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+
+    
 }
